@@ -1,2 +1,2 @@
-#### Hosting as a windows service
-* [nssm](https://nssm.cc/)
+#### Hosting 
+* As a windows service [nssm](https://nssm.cc/)
