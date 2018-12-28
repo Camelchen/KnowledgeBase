@@ -1,2 +1,2 @@
 #### Hosting 
-* As a windows service [nssm](https://nssm.cc/)
+* [nssm](https://nssm.cc/), run command (exe|bat|etc.) as a windows service.
