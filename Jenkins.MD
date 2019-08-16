@@ -9,3 +9,15 @@
         stage() { ... }
     }
 * try...catch...finally
+    ```jenkins
+    try(){
+        stage() { ... }
+        stage() { ... }
+    }
+    catch(error){
+        ....
+        throw e
+    }
+    finally{
+        ....
+    }
