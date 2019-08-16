@@ -8,3 +8,4 @@
         stage() { ... }
         stage() { ... }
     }
+* try...catch...finally
