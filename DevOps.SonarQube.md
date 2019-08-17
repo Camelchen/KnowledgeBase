@@ -16,7 +16,8 @@
         stage('SonarQube'){
             withEnv(["scannerHome=${tool 'SonarQubeScanner'}"]) {
                 withSonarQubeEnv('sonarqube') {
-                    bat "${scannerHome}\\bin\\sonar-scanner.bat -Dsonar.projectKey=igrocery.web"
+                    bat "${scannerHome}\\bin\\sonar-scanner.bat -Dsonar.projectKey=igrocery-web"
+                    //bat "mvn clean package sonar:sonar"
                 }
                 timeout(time: 10, unit: 'MINUTES') {
                     waitForQualityGate abortPipeline: true
