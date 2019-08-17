@@ -11,3 +11,16 @@
       > **User > My Account > Security > Generate Tokens**
       > e0499938b0d2e7eaac958ecff08182405029bcf7
    
+   * Jenkins
+```Jenkins
+        stage('SonarQube'){
+            withEnv(["scannerHome=${tool 'SonarQubeScanner'}"]) {
+                withSonarQubeEnv('sonarqube') {
+                    bat "${scannerHome}\\bin\\sonar-scanner.bat -Dsonar.projectKey=igrocery.web"
+                }
+                timeout(time: 10, unit: 'MINUTES') {
+                    waitForQualityGate abortPipeline: true
+                }
+                
+            }
+        }
