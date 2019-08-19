@@ -7,9 +7,8 @@
  * user: admin\admin
  
  #### Setup
-   * create user token 
+   * create user token
       > **User > My Account > Security > Generate Tokens**
-      > e0499938b0d2e7eaac958ecff08182405029bcf7
    
    * Jenkins
 ```Jenkins
@@ -25,3 +24,8 @@
                 
             }
         }
+````
+ #### Configuration
+   * exlusive source files
+      > **%Project% > Administration > General Settings > Analsysis Scope > Files** <br>
+      > DevOps.API/wwwroot/**
