@@ -29,3 +29,6 @@
    * exlusive source files
       > **%Project% > Administration > General Settings > Analsysis Scope > Files** <br>
       > DevOps.API/wwwroot/**
+
+#### FAQ
+   * only **master** branch can be scanned in Azure DevOps if using SonarQube Community Edition.
